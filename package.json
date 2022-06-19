@@ -1,0 +1,32 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "Using Fastify to interact with Database(MySQL)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevesdiary/fastify-with-mysql.git"
+  },
+  "keywords": [
+    "Fastify",
+    "Mysql",
+    "database",
+    "API"
+  ],
+  "author": "Stephen Oyeyemi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevesdiary/fastify-with-mysql/issues"
+  },
+  "homepage": "https://github.com/stevesdiary/fastify-with-mysql#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "fastify": "^4.0.3"
+  }
+}
