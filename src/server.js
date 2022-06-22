@@ -4,9 +4,11 @@ const dbconnector = require('../db')
 // fastify.register(dbconnector)
 // fastify.register(route)
 fastify.get('/', async (request, reply) => { 
-   dbconnector.query('SELECT * FROM loan  AS solution', function (error, results, fields) {
+   dbconnector.query('SELECT * FROM `loan` WHERE `interest` = 50',
+   function (error, results, fields) {
       if (error) throw error;
-      console.log('The solution is: ', results[0].solution);
+      console.log('The solution is: ', results);
+      
    })
    reply.send({ hello: 'world' }) 
 }) 
